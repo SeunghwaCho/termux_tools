@@ -12,3 +12,4 @@ pip install --upgrade pip setuptools wheel
 pip install --no-cache-dir jupyter
 
 python add_to_bashrc.py
+source .bashrc
