@@ -7,6 +7,7 @@ source ~/.bashrc
 pkg install -y tmux
 pkg install -y python rust libffi clang make cmake git libbz2 zlib libjpeg-turbo
 pkg install -y binutils
+pkg install -y python-psutil
 CFLAGS="-I$PREFIX/include" LDFLAGS="-L$PREFIX/lib" pip install --no-cache-dir --force-reinstall cffi
 
 pip install --upgrade pip setuptools wheel
