@@ -1,6 +1,7 @@
 # Jupyter Notebook 설치
 pkg update -y && pkg upgrade -y
 
+export ANDROID_API_LEVEL=$(getprop ro.build.version.sdk)
 echo "export ANDROID_API_LEVEL=$(getprop ro.build.version.sdk)" >> ~/.bashrc
 source ~/.bashrc
 
