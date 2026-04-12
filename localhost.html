@@ -423,7 +423,7 @@
 // ============================================================
 const DB = (() => {
   const DB_NAME = 'LocalHubDB';
-  const DB_VERSION = 1;
+  const DB_VERSION = 2;
   const STORE = 'entries';
   let _db = null;
   let _openPromise = null;
@@ -766,6 +766,7 @@ function filterEntries(entries, q) {
 // ============================================================
 const DEFAULT_PORTS = [
   { port: 8080, label: 'Main', emoji: '⚡', featured: true },
+  { port: 8888, label: 'Jupyter', emoji: '📔' },
   { port: 8881, label: 'Dev 1', emoji: '🔵' },
   { port: 8882, label: 'Dev 2', emoji: '🟢' },
   { port: 8883, label: 'Dev 3', emoji: '🟡' },
@@ -773,8 +774,8 @@ const DEFAULT_PORTS = [
   { port: 8885, label: 'Dev 5', emoji: '🔴' },
   { port: 8886, label: 'Dev 6', emoji: '🟣' },
   { port: 8887, label: 'Dev 7', emoji: '🤍' },
-  { port: 8888, label: 'Dev 8', emoji: '🖤' },
-  { port: 8889, label: 'Dev 9', emoji: '🧡' },
+  { port: 8889, label: 'Dev 8', emoji: '🇰🇷' },
+  { port: 9001, label: '고스톱', emoji: '🎴' },
 ];
 
 // ============================================================
