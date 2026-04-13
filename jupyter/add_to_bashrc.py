@@ -16,7 +16,7 @@ start_jupyter_tmux() {
     fi
 
     # 2. tmux 세션 생성 시 --notebook-dir 옵션 추가
-    tmux new-session -d -s jupyter "jupyter notebook --notebook-dir=$TARGET_DIR --NotebookApp.token='' --NotebookApp.password='a1234'"
+    tmux new-session -d -s jupyter "jupyter notebook --notebook-dir=$TARGET_DIR --NotebookApp.token='' --NotebookApp.password=''"
 
     echo "Jupyter started at: $TARGET_DIR"
 
